@@ -1,0 +1,26 @@
+﻿  Using triplet "x86-windows" from "D:\Repo\Extern library\vcpkg\installed\x86-windows\"
+  main.cc
+D:\Repo\Cpp Projects\DataStructure\SequenceTable\sequence_table.hpp(56,22): warning C4018: '<': signed/unsigned mismatch
+D:\Repo\Cpp Projects\DataStructure\SequenceTable\sequence_table.hpp(48): message : while compiling class template member function 'void SequenceTable<int>::unshift(const T &)'
+          with
+          [
+              T=int
+          ]
+D:\Repo\Cpp Projects\DataStructure\SequenceTable\main.cc(17): message : see reference to function template instantiation 'void SequenceTable<int>::unshift(const T &)' being compiled
+          with
+          [
+              T=int
+          ]
+D:\Repo\Cpp Projects\DataStructure\SequenceTable\main.cc(16): message : see reference to class template instantiation 'SequenceTable<int>' being compiled
+D:\Repo\Cpp Projects\DataStructure\SequenceTable\sequence_table.hpp(93,13): warning C4018: '<': signed/unsigned mismatch
+D:\Repo\Cpp Projects\DataStructure\SequenceTable\sequence_table.hpp(92): message : while compiling class template member function 'T &SequenceTable<T>::at(int) const'
+          with
+          [
+              T=int
+          ]
+D:\Repo\Cpp Projects\DataStructure\SequenceTable\sequence_table.hpp(107): message : see reference to function template instantiation 'T &SequenceTable<T>::at(int) const' being compiled
+          with
+          [
+              T=int
+          ]
+  SequenceTable.vcxproj -> D:\Repo\Cpp Projects\DataStructure\Debug\SequenceTable.exe
