@@ -24,7 +24,6 @@
   <ItemGroup>
     <ClInclude Include="linked_list.hpp" />
     <ClInclude Include="sequence_table.hpp" />
-    <ClInclude Include="Vector2d.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
