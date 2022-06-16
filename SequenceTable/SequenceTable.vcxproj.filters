@@ -6,6 +6,5 @@
   <ItemGroup>
     <ClInclude Include="sequence_table.hpp" />
     <ClInclude Include="linked_list.hpp" />
-    <ClInclude Include="Vector2d.h" />
   </ItemGroup>
 </Project>

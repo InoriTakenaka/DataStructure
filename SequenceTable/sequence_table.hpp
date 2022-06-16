@@ -34,7 +34,10 @@ public:
 	/// <param name="source"></param>
 	/// <returns></returns>
 	SequenceTable<T>(SequenceTable<T>& source) noexcept {
-
+		size_ = source.size_;
+		capacity_ = source.capacity_;
+		data_ = new T[capacity_];
+		memcpy_s(this->data_, capacity_, source.data_, source.capacity_);
 	}
 
 	~SequenceTable<T>() {
@@ -115,7 +118,7 @@ public:
 		return size_;
 	}
 
-	void Sort(std::function<bool(T,T)>& predict) {
+	void sort(std::function<bool(T,T)>& predict) {
 		for (unsigned int i = 0; i <= size_; i++) {
 			if (predict(data_[i], data_[i + 1])) {
 
@@ -123,6 +126,23 @@ public:
 		}
 	}
 	
+	/// <summary>
+	/// delete element of specified position
+	/// </summary>
+	/// <param name="pos"></param>
+	void erase(int pos) {
+
+	}
+
+	/// <summary>
+	/// delete element within range [begin,end)
+	/// </summary>
+	/// <param name="begin"></param>
+	/// <param name="end"></param>
+	void erase(int begin, int end) {
+
+	}
+
 private:
 	/// <summary>
 	/// pointer for dynamic array
