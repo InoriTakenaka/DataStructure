@@ -14,12 +14,12 @@ private:
 	int y_;
 public:
 	Point(int x, int y) :x_(x), y_(y) {	}
-	Point() :x_(0),y_(0){}
+	Point() :x_(0), y_(0) {}
 	/// <summary>
 	/// 获得X坐标
 	/// </summary>
 	/// <returns></returns>
-	int getX() {
+	int getX() const {
 		return x_;
 	}
 	/// <summary>
@@ -33,7 +33,7 @@ public:
 	/// 获得Y坐标
 	/// </summary>
 	/// <returns></returns>
-	int getY() {
+	int getY() const {
 		return y_;
 	}
 	/// <summary>
